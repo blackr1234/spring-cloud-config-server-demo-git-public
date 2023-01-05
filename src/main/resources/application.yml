@@ -1,0 +1,16 @@
+
+server:
+  port: 8889
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          clone-on-start: true
+          refresh-rate: 10
+          ignore-local-ssh-settings: true
+          uri: https://github.com/blackr1234/spring-cloud-config-demo-public.git
+          default-label: master
+          search-paths:
+            - "{application}"
