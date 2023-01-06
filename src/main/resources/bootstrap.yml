@@ -11,6 +11,6 @@ spring:
           refresh-rate: 10
           ignore-local-ssh-settings: true
           uri: https://github.com/blackr1234/spring-cloud-config-demo-public.git
-          default-label: master
+          default-label: fixed-1
           search-paths:
             - "{application}"
